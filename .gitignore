@@ -1,0 +1,42 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Laravel secrets and runtime files
+resume_backend/resume-backend/.env
+resume_backend/resume-backend/storage/*.key
+resume_backend/resume-backend/storage/logs/*
+# Local generated files
+structure.txt
+# Laravel dependencies
+resume_backend/vendor/
+resume_backend/resume-backend/vendor/
+
+# Laravel secrets
+
+resume_backend/resume-backend/plainTextToken
+
+# Laravel runtime
+resume_backend/resume-backend/storage/framework/cache/*
+resume_backend/resume-backend/storage/framework/sessions/*
+resume_backend/resume-backend/storage/framework/views/*
