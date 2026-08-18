@@ -1,6 +1,6 @@
 const configuredApiBase =
   process.env.REACT_APP_API_URL ||
-  "http://localhost:8000/api";
+  "https://resume-builder.infinityfree.io/api";
 
 export const API_BASE_URL =
   configuredApiBase.replace(/\/+$/, "");
