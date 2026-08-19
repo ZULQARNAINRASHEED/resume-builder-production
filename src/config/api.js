@@ -1,9 +1,7 @@
-const configuredApiBase =
-  process.env.REACT_APP_API_URL ||
-  "https://resume-builder.infinityfree.io/api";
+const API_BASE_URL =
+  process.env.REACT_APP_API_URL || "http://127.0.0.1:8000/api";
 
-export const API_BASE_URL =
-  configuredApiBase.replace(/\/+$/, "");
+export { API_BASE_URL };
 
 export function apiUrl(path = "") {
   return `${API_BASE_URL}/${String(path).replace(/^\/+/, "")}`;

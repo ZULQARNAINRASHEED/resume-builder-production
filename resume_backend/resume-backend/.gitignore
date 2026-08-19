@@ -20,3 +20,5 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+# Temporary deployment/debug archives
+resume_backend/resume-backend/*.zip
