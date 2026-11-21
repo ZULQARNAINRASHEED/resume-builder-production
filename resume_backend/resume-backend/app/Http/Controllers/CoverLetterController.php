@@ -200,9 +200,12 @@ PROMPT;
 
                     'generationConfig' => [
                         'temperature' => 0.7,
-                        'maxOutputTokens' => 2048,
+                        'maxOutputTokens' => 1024,
                         'topP' => 0.9,
                         'topK' => 40,
+                        'thinkingConfig' => [
+                            'thinkingLevel' => 'low',
+                        ],
                     ],
                 ]
             );

@@ -314,7 +314,10 @@ PROMPT;
                         ],
 
                         'generationConfig' => [
-                            'maxOutputTokens' => 4096,
+                            'maxOutputTokens' => 2048,
+                            'thinkingConfig' => [
+                                'thinkingLevel' => 'low',
+                            ],
                         ],
                     ]
                 );
@@ -443,7 +446,10 @@ PROMPT;
                         ],
 
                         'generationConfig' => [
-                            'maxOutputTokens' => 4096,
+                            'maxOutputTokens' => 2048,
+                            'thinkingConfig' => [
+                                'thinkingLevel' => 'low',
+                            ],
                         ],
                     ]
                 );
