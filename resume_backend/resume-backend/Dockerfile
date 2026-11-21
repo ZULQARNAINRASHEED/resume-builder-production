@@ -13,4 +13,4 @@ COPY . .
 RUN php artisan package:discover && php artisan config:clear && php artisan route:clear && php artisan view:clear
 
 EXPOSE 8080
-CMD ["sh", "-c", "php artisan serve --host=0.0.0.0 --port=${PORT:-8080}"]
+CMD ["sh", "-c", "php artisan serve --host=0.0.0.0 --port=${PORT:-8080} --no-reload"]
