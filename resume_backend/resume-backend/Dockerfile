@@ -1,8 +1,8 @@
-FROM composer:2-php8.3 AS vendor
+FROM composer:2 AS vendor
 
 WORKDIR /app
 COPY composer.json composer.lock ./
-RUN composer install --no-dev --prefer-dist --no-interaction --no-progress --optimize-autoloader
+RUN composer install --no-dev --prefer-dist --no-interaction --no-progress --optimize-autoloader --ignore-platform-reqs
 
 FROM public.ecr.aws/docker/library/php:8.3-cli
 
