@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { apiUrl } from "../config/api";
 
 const JobTracker = () => {
   const [jobTitle, setJobTitle] = useState("");
@@ -61,7 +62,7 @@ const JobTracker = () => {
       }
 
       const response = await fetch(
-        `http://127.0.0.1:8000/api/jobs?${params.toString()}`
+        `${apiUrl("jobs")}?${params.toString()}`
       );
 
       const data = await response.json();

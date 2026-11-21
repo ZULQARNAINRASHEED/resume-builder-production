@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-
-const API_URL = "http://127.0.0.1:8000/api";
+import { API_BASE_URL as API_URL } from "../config/api";
 
 function CoverLetter() {
   const [formData, setFormData] = useState({
