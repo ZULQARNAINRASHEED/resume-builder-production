@@ -4,7 +4,7 @@ WORKDIR /app
 COPY composer.json composer.lock ./
 RUN composer install --no-dev --prefer-dist --no-interaction --no-progress --optimize-autoloader
 
-FROM php:8.3-cli
+FROM public.ecr.aws/docker/library/php:8.3-cli
 
 WORKDIR /var/www/html
 RUN docker-php-ext-install pdo_mysql
